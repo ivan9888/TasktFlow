@@ -22,6 +22,6 @@ public class User {
     private String email;
 
     // Relation: A user can have multiple tasks
-    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Task> tasks;
 }
