@@ -20,10 +20,10 @@ public class Task {
     private String description;
 
     @Column(nullable = false)
-    private String state; //
+    private String status; //
 
     // Relation
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false) // column (Foreign Key)
-    private User users;
+    private User user;
 }
